@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>My Little Pony</title>
+
+        <script>
+            let tamanhoGangue = 1;
+
+            function molharGremlin() {
+               tamanhoGangue++;                
+               document.getElementById('gangue').innerHTML += 
+               `<div class="gremlin" id="g${tamanhoGangue}">
+                    <h3>My Little Pony ${tamanhoGangue}</h3>
+                    <button onclick="molharGremlin()">Molhar</button>
+                    <button onclick="alimentarGremlin('g${tamanhoGangue}')">Alimentar</button>
+                </div>`;              
+            }
+
+            function alimentarGremlin(idGremlin) {
+                document.getElementById(idGremlin).style.backgroundColor = 'pink';
+            }
+
+            function matarGremlin(idGremlin) {
+                let gremlin = document.getElementById(idGremlin);
+                gremlin.style.display = 'none';
+            }
+
+            function jorrarSangue(idGremlin) {
+                let gremlin = document.getElementById(idGremlin);
+                gremlin.style.backgroundColor = 'red'; 
+                gremlin.innerHTML += `<p>AAAAHHH!!!</p>`; 
+            }
+        </script>
+
+        <style>
+            .gremlin h3 {
+                text-align: center;
+            }
+
+            .gremlin {
+                border: 1px solid black;
+                background-color: antiquewhite;
+                margin: 20px;
+                display: inline-block;
+                padding: 20px;
+            }
+
+            .red-button {
+                background-color: red;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>My Little Pony do MAL</h1>
+
+        <h2>Regras:</h2>
+
+        <ol>
+            <li>Não alimentar</li>
+            <li>Não molhar</li>
+            <img src= "My Little Pony do mal.jpg" alt="My Little Pony do mal">
+        </ol>
+
+        <div id="gangue">
+            <div class="gremlin" id="g1">
+                <h3>My Little Pony 1</h3>
+                <button onclick="molharGremlin()">Molhar</button>
+                <button onclick="alimentarGremlin('g1')">Alimentar</button>
+            </div>
+        </div>
+
+        <div id="acoesGremlins">
+            <h2>Ações com My Little's:</h2>
+            <button class="red-button" onclick="matarGremlin('gangue')">Matar</button>
+            <button class="red-button" onclick="jorrarSangue('gangue')">Jorrar Sangue</button>
+        </div>
+
+    </body>
+</html>

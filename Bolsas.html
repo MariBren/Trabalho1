@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bolsas - PuraFlor Elegance</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff5f8;
+      color: #333;
+    }
+
+    .menu-principal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(90deg, #f465b6, #f77be0);
+      box-shadow: 0 4px 10px rgba(255, 143, 207, 0.3);
+    }
+
+    .menu-principal .logo a {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+    }
+
+    .menu-principal ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+
+    .menu-principal a {
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .menu-principal a:hover {
+      color: #fff0fa;
+    }
+
+    .titulo {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+      font-family: 'Playfair Display', serif;
+      color: #f45dd6;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 2rem 0 1rem;
+      color: #d71e5f;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 2rem 3rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #f54dd6;
+      color: white;
+      text-align: center;
+      padding: 1.2rem 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <nav class="menu-principal">
+    <div class="logo"><a href="index.html">PuraFlor Elegance</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="informacoes.html">Informações</a></li>
+      <li><a href="categorias.html">Categorias</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <section>
+    <h1 class="titulo">Coleção de Bolsas</h1>
+
+    <!-- Feminino -->
+    <h2>Bolsas Femininas</h2>
+    <div class="galeria">
+      <img src="https://i.pinimg.com/originals/5e/cb/f2/5ecbf2026c4dc9f5b15aa68ad828c18a.jpg" alt="Bolsa Feminina Rosa">
+      <img src="https://i.pinimg.com/736x/6c/4f/6f/6c4f6fb4d5e5f9b6cb3c71354b55d57a.jpg" alt="Bolsa Feminina Bege">
+      <img src="https://i.pinimg.com/736x/f9/8f/9d/f98f9d7d5f7878483c60e2a9ac7c4ee3.jpg" alt="Bolsa Feminina Preta">
+    </div>
+
+    <!-- Masculino -->
+    <h2>Bolsas Masculinas</h2>
+    <div class="galeria">
+      <img src="https://i.pinimg.com/736x/7b/0f/3c/7b0f3c1a73fdf8f0e69e56d6a0f9e7c8.jpg" alt="Bolsa Masculina de Couro">
+      <img src="https://i.pinimg.com/736x/22/2c/d9/222cd94eae20f727e9c43c9a879e777b.jpg" alt="Bolsa Masculina Casual">
+      <img src="https://i.pinimg.com/736x/af/6e/0a/af6e0a21b2a4a93a2ee03d7a83381572.jpg" alt="Bolsa Masculina Clássica">
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2025 PuraFlor Elegance — Beleza e estilo que inspiram você.
+  </footer>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
